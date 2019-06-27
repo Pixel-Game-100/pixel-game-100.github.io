@@ -104,7 +104,40 @@ buisness please use my email above.
 <p><em> _</em></p>	
 	
 	
-	
+<form>
+Convert the value below to binary:
+<br>
+<input size="7">
+<script>
+<!--- Hide from old browsers
+xnum=Math.ceil(Math.random()*100);
+document.forms[0].elements[0].value=xnum;
+// End hide -->
+</script>
+<input size="24">
+<br>
+<input value="Check Answer" onclick="answer(Decimal_to_binary(document.forms[0].elements[0].value),1);" type="button">
+<input value="Give Up" onclick="give(Decimal_to_binary(document.forms[0].elements[0].value),1);" type="button"><p>
+<br>
+Convert the value below to decimal:
+<br>
+<input size="24">
+<script>
+<!--- Hide from old browsers
+xnum=Math.ceil(Math.random()*100);
+document.forms[0].elements[4].value=Decimal_to_binary(xnum);
+// End hide -->
+</script>
+<input size="7">
+<br>
+<input value="Check Answer" onclick="answer(Binary_to_decimal(document.forms[0].elements[4].value),5);" type="button">
+<input value="Give Up" onclick="give(Binary_to_decimal(document.forms[0].elements[4].value),5);" type="button">
+<br>
+<br>
+<input value="New Quiz" onclick="reload()" type="Reset">
+<br>
+
+</p></form>	
 	
 	
 	
